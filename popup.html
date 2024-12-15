@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard Maker</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 10px;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    .card {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    .card-side {
+      margin: 10px 0;
+    }
+    .card-content {
+      margin: 5px 0;
+      padding: 5px;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      max-height: 200px;
+      overflow-y: auto;
+      word-wrap: break-word;
+    }
+    .card-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 5px 0;
+    }
+    .card-content img:not([src]), 
+    .card-content img[src=""] {
+      min-height: 50px;
+      background: #f0f0f0;
+    }
+    #status {
+      color: #666;
+      font-style: italic;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    button[onclick*="deleteCard"] {
+      background: #f44336;
+      margin-top: 5px;
+    }
+    button[onclick*="deleteCard"]:hover {
+      background: #da190b;
+    }
+  </style>
+  <meta http-equiv="Content-Security-Policy" content="img-src * data: https:; default-src 'self' 'unsafe-inline';">
+</head>
+<body>
+  <h2>Flashcard Maker</h2>
+  <button id="captureBtn">Capture Selection</button>
+  <button id="reviewBtn">Review Cards</button>
+  <p id="status"></p>
+  <div id="cardList"></div>
+  <script src="popup.js"></script>
+</body>
+</html> 
