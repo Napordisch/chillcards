@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const cardList = document.getElementById('cardList');
   const reviewBtn = document.getElementById('reviewBtn');
   const exportBtn = document.getElementById('exportBtn');
+  const importBtn = document.getElementById('importBtn');
+  const importInput = document.getElementById('importInput');
 
   // Load existing cards
   chrome.storage.local.get(['flashcards'], function(result) {
@@ -73,6 +75,47 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   exportBtn.addEventListener('click', exportCards);
+
+  importBtn.addEventListener('click', () => {
+    importInput.click();
+  });
+
+  importInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const importedCards = JSON.parse(e.target.result);
+          
+          // Validate the imported data
+          if (!Array.isArray(importedCards)) {
+            throw new Error('Invalid file format');
+          }
+          
+          // Confirm before importing
+          if (confirm(`Import ${importedCards.length} cards? This will add to your existing cards.`)) {
+            // Add imported cards to existing cards
+            cards = cards.concat(importedCards);
+            
+            // Save to storage
+            chrome.storage.local.set({ flashcards: cards }, () => {
+              displayCards();
+              status.textContent = `Successfully imported ${importedCards.length} cards!`;
+              // Reset the file input
+              importInput.value = '';
+            });
+          }
+        } catch (error) {
+          status.textContent = 'Error: Invalid file format';
+          console.error('Import error:', error);
+          // Reset the file input
+          importInput.value = '';
+        }
+      };
+      reader.readAsText(file);
+    }
+  });
 
   function displayCards() {
     cardList.innerHTML = '';
