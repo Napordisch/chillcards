@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const status = document.getElementById('status');
   const cardList = document.getElementById('cardList');
   const reviewBtn = document.getElementById('reviewBtn');
+  const exportBtn = document.getElementById('exportBtn');
 
   // Load existing cards
   chrome.storage.local.get(['flashcards'], function(result) {
@@ -71,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  exportBtn.addEventListener('click', exportCards);
+
   function displayCards() {
     cardList.innerHTML = '';
     cards.forEach((card, index) => {
@@ -112,5 +115,26 @@ document.addEventListener('DOMContentLoaded', function() {
     cards.splice(index, 1);
     chrome.storage.local.set({ flashcards: cards });
     displayCards();
+  }
+
+  function exportCards() {
+    const dataStr = JSON.stringify(cards, null, 2);
+    
+    // Create a Blob containing the data
+    const blob = new Blob([dataStr], {type: 'application/json'});
+    
+    // Create a URL for the blob
+    const url = URL.createObjectURL(blob);
+    
+    // Create a temporary link element and trigger the download
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'flashcards.json';
+    document.body.appendChild(link);
+    link.click();
+    
+    // Clean up
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   }
 }); 

@@ -61,13 +61,29 @@
     button[onclick*="deleteCard"]:hover {
       background: #da190b;
     }
+    #exportButton {
+      margin-left: 10px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #exportButton:hover {
+      background-color: #45a049;
+    }
   </style>
   <meta http-equiv="Content-Security-Policy" content="img-src * data: https:; default-src 'self' 'unsafe-inline';">
 </head>
 <body>
   <h2>Flashcard Maker</h2>
   <button id="captureBtn">Capture Selection</button>
-  <button id="reviewBtn">Review Cards</button>
+  <div class="button-container">
+    <button id="reviewBtn">Review Cards</button>
+    <button id="exportBtn">Export Cards</button>
+  </div>
   <p id="status"></p>
   <div id="cardList"></div>
   <script src="popup.js"></script>
