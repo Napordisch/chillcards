@@ -133,15 +133,15 @@ document.addEventListener('DOMContentLoaded', function() {
       backContent.innerHTML = card.back;
 
       const deleteBtn = document.createElement('button');
-      deleteBtn.textContent = 'Delete';
+      deleteBtn.textContent = 'Удалить';
       deleteBtn.addEventListener('click', () => deleteCard(index));
 
       cardElement.innerHTML = `
         <div class="card-side">
-          <strong>Front:</strong>
+          <strong>Наружняя сторона:</strong>
         </div>
         <div class="card-side">
-          <strong>Back:</strong>
+          <strong>Внутренняя сторона:</strong>
         </div>
       `;
 

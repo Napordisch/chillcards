@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<meta charset="utf-8">
+<html lang="ru">
 <head>
   <title>Flashcard Maker</title>
   <style>
@@ -50,6 +51,7 @@
       padding: 5px 10px;
       border-radius: 4px;
       cursor: pointer;
+      margin: 0.2em;
     }
     button:hover {
       background: #45a049;
@@ -64,7 +66,7 @@
     #exportButton {
       margin-left: 10px;
       padding: 8px 16px;
-      background-color: #4CAF50;
+      background-color: #b4b4b4;
       color: white;
       border: none;
       border-radius: 4px;
@@ -74,7 +76,7 @@
     #exportButton:hover {
       background-color: #45a049;
     }
-    #importBtn {
+    /* #importBtn {
         margin-left: 10px;
         padding: 8px 16px;
         background-color: #2196F3;
@@ -82,7 +84,7 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-    }
+    } */
 
     #importBtn:hover {
         background-color: #1976D2;
@@ -91,12 +93,12 @@
   <meta http-equiv="Content-Security-Policy" content="img-src * data: https:; default-src 'self' 'unsafe-inline';">
 </head>
 <body>
-  <h2>Flashcard Maker</h2>
-  <button id="captureBtn">Capture Selection</button>
+  <h2>Чиллкардс</h2>
+  <button id="captureBtn">Сохранить выделение</button>
   <div class="button-container">
-    <button id="reviewBtn">Review Cards</button>
-    <button id="exportBtn">Export Cards</button>
-    <button id="importBtn">Import Cards</button>
+    <button id="reviewBtn">Упражняться</button>
+    <button id="exportBtn">Экспортировать карточки</button>
+    <button id="importBtn">Импортировать карточки</button>
     <input type="file" id="importInput" accept=".json" style="display: none;">
   </div>
   <p id="status"></p>
