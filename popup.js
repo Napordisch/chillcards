@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
         cards.push(response.card);
         chrome.storage.local.set({ flashcards: cards });
         displayCards();
-        status.textContent = "Card created!";
+        status.textContent = "Карточка добавлена";
       } else if (response.message) {
         // We got the front side
         status.textContent = response.message;
       }
     } catch (error) {
       console.error('Error:', error);
-      status.textContent = "Error: Could not capture selection. Make sure you have selected some content on the page.";
+      status.textContent = "Ничего не выделено или не получилось сохранить выделение.";
     }
   });
 

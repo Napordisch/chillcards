@@ -45,7 +45,7 @@ if (typeof window.flashcardMakerInitialized === 'undefined') {
         if (isCollectingFront) {
           currentCard.front = processedHTML;
           isCollectingFront = false;
-          sendResponse({ message: "Front side collected. Now select the back side." });
+          sendResponse({ message: "Наружняя сторона выбрана. Теперь выберите внутреннюю." });
         } else {
           currentCard.back = processedHTML;
           isCollectingFront = true;
