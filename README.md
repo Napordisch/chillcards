@@ -26,4 +26,4 @@
 7. Закрепить расширение можно в меню расширений ![image](https://github.com/user-attachments/assets/45c5325c-97f0-4f09-a7c1-c68c0a39b147)
 
 # Поддержка
-Если что-то непонятно, можете писать в телеграм [misca_musca](https://t.me/misca_musca)
+Если что-то непонятно, пишите в телеграм [misca_musca](https://t.me/misca_musca)
