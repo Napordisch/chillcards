@@ -1,8 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Flashcard Maker",
+  "name": "Chillcards",
   "version": "1.0",
-  "description": "Create flashcards from webpage content",
   "permissions": [
     "storage",
     "activeTab",
