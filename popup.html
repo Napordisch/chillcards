@@ -90,7 +90,7 @@
         background-color: #1976D2;
     }
   </style>
-  <meta http-equiv="Content-Security-Policy" content="img-src * data: https:; default-src 'self' 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy" content="img-src * data: https:; default-src 'self';">
 </head>
 <body>
   <h2>Чиллкардс</h2>
@@ -98,7 +98,8 @@
   <div class="button-container">
     <button id="reviewBtn">Упражняться</button>
     <button id="exportBtn">Экспортировать карточки</button>
-    <button id="importBtn">Импортировать карточки</button>
+    <!-- <button id="importBtn">Импортировать карточки</button> -->
+    <h3>Импорт карточек:</h3>
     <input type="file" id="importInput" accept=".json" style="display: none;">
   </div>
   <p id="status"></p>
