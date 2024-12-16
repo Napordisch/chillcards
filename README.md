@@ -1,6 +1,6 @@
 # Инструкция
 ## Установка
-1. Скачать последний файл с расширением .zip среди [релизов](https://github.com/Napordisch/chillcards/releases)
+1. Скачать последний (верхний) файл Source code (zip) среди [релизов](https://github.com/Napordisch/chillcards/releases)
 2. Распакуйте скачанный zip архив. Например в Виндоусе нажмите на файл правой кнопкой и «Извлечь всё...». Можете выбрать папку, по умолчанию zip распакуется в рядом с собой.
 3. Перейдите по адресу chrome://extensions/ в браузере или нажмите на кнопку расширений <img width="23" alt="Screenshot 2024-12-16 at 11 38 39" src="https://github.com/user-attachments/assets/52daeb6e-13c8-4d94-9281-aea2b9c7d48c" />, а затем на кнопку управления расширениям:\
 ![image](https://github.com/user-attachments/assets/11e6c8ff-20da-4dd2-9e9e-fcc06ef8cadc)
