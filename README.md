@@ -38,7 +38,7 @@
 ![image](https://github.com/user-attachments/assets/39fb355c-94d8-4807-a498-c001de2c4513)
 
 Ещё раз нажмите «сохранить выделение» и карточка появится в коллекции»:\
-![image](https://github.com/user-attachments/assets/dbb2be9a-aa8e-47c5-bb41-b66cb4f0b693)
+![image](https://github.com/user-attachments/assets/faf589fe-7e5e-4c4c-955c-7f2b6e2c83a5)
 
 Это работает и с картиками:\
 ![image](https://github.com/user-attachments/assets/eeb8073d-d099-4d56-b4e1-c0c7dc14d294)
