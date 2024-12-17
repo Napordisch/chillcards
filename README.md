@@ -32,7 +32,7 @@
 ![image](https://github.com/user-attachments/assets/db4ed92c-fe5c-42af-b14c-108dd8d4e6b4)
 
 После того, как вы впервые кликните на «сохранить выделение», создастся наружняя сторона карточки:\
-![image](https://github.com/user-attachments/assets/236b7060-b793-4084-8793-e4f877c5401a)
+![image](https://github.com/user-attachments/assets/159fad4a-61ba-40f9-96d1-636e9cdb0ef8)
 
 После чего выделите ту часть страницы, которая должна стать обратной стороной карточки:\
 ![image](https://github.com/user-attachments/assets/39fb355c-94d8-4807-a498-c001de2c4513)
