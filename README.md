@@ -21,9 +21,52 @@
 После этого расширение появится среди других:\
 ![image](https://github.com/user-attachments/assets/c80e769c-3339-4672-878d-25b70bb58e6d)
 
-
-
 7. Закрепить расширение можно в меню расширений ![image](https://github.com/user-attachments/assets/45c5325c-97f0-4f09-a7c1-c68c0a39b147)
+
+## Использование
+### Создание карточки
+Когда вы хотите сохранить что-то для запоминания, выделите это:\
+![image](https://github.com/user-attachments/assets/f98fc751-4294-4a7c-a1cf-9a68d0d82735)
+
+Затем Кликните на расширение:
+![image](https://github.com/user-attachments/assets/db4ed92c-fe5c-42af-b14c-108dd8d4e6b4)
+
+После того, как вы впервые кликните на «сохранить выделение», создастся наружняя сторона карточки:\
+![image](https://github.com/user-attachments/assets/236b7060-b793-4084-8793-e4f877c5401a)
+
+После чего выделите ту часть страницы, которая должна стать обратной стороной карточки:\
+![image](https://github.com/user-attachments/assets/39fb355c-94d8-4807-a498-c001de2c4513)
+
+Ещё раз нажмите «сохранить выделение» и карточка появится в коллекции»:\
+![image](https://github.com/user-attachments/assets/dbb2be9a-aa8e-47c5-bb41-b66cb4f0b693)
+
+Это работает и с картиками:\
+![image](https://github.com/user-attachments/assets/eeb8073d-d099-4d56-b4e1-c0c7dc14d294)
+
+### Упражнение
+Чтобы использовать карточки для повторения, нажмите «упражняться», тогда появится окно с карточками:\
+![image](https://github.com/user-attachments/assets/0b0b61c7-ad0e-4901-9746-9b4a9cbedc7c)
+
+Можно перевернуть карточки, нажав соответствующую кнопку:\
+![image](https://github.com/user-attachments/assets/1e1e7fba-d403-4dab-9d3d-fed60ae58131)
+
+Или перейти к следующей или предыдущей:\
+![image](https://github.com/user-attachments/assets/3adac0ce-cbfa-4d92-ad99-fa17ed6200ab)
+
+### Экспорт
+Кнопка «экспортировать карточки» сохраняет карточки в файл json. Так  можно поделиться ими или перенести их на другой компьютер:\
+![image](https://github.com/user-attachments/assets/3eb212fc-5ccd-42b5-a958-394e3bf43993)
+
+### Импорт
+Затем их можно импортировать, для этого нажмите «импортировать» или «выберите файл»:\
+![image](https://github.com/user-attachments/assets/203cbb76-97a8-42b6-b7fb-2a5a229027e1)
+
+Появится окно выбора файла:\
+![image](https://github.com/user-attachments/assets/959635ac-d232-447f-b498-3a80f73fb094)
+
+После этого карточки из файла появятся в коллекции:\
+![image](https://github.com/user-attachments/assets/9a402af9-b53d-421c-9d9b-6be54b8db6bb)
+
 
 # Поддержка
 Если что-то непонятно, пишите в телеграм [misca_musca](https://t.me/misca_musca)
